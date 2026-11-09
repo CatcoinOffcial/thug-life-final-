@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thug Life</title>
+<meta name="description" content="Sometimes the life chooses you">
+<link rel="icon" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="tv"><div class="stage">
+  <div class="screen crt">
+    <!-- MAIN SITE (hidden until the intro video ends) -->
+    <section id="main" class="layer main" aria-hidden="true">
+      <img class="main-art" src="assets/main.png" alt="" onerror="this.remove()">
+      <a class="x-logo" id="x-btn" href="https://x.com/ThugLifePF" target="_blank" rel="noopener noreferrer" aria-label="X">
+        <svg viewBox="0 0 24 24" width="100%" height="100%" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+    </section>
+
+    <!-- INTRO VIDEO -->
+    <section id="video-layer" class="layer video-layer">
+      <video id="intro-video" src="assets/intro.mp4" playsinline preload="auto"></video>
+    </section>
+
+    <!-- ENTER SCREEN -->
+    <section id="enter" class="layer enter">
+      <button id="enter-btn" type="button"><span class="blink">&gt;</span><span>ENTER</span></button>
+    </section>
+
+    <div class="scanlines"></div>
+    <div class="grain"></div>
+  </div>
+  <div class="tv-overlay"></div>
+</div></main>
+<script src="main.js"></script>
+</body>
+</html>
